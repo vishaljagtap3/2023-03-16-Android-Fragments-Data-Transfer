@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
             supportFragmentManager. beginTransaction()
                 .add(R.id.mainContainer, loginFragment, null)
+                .addToBackStack(null)
                 .commit()
 
         }
